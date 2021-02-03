@@ -4,16 +4,18 @@ const path = require('path');
 
 module.exports = (env, options) => {
   const { mode = 'development' } = options;
-  console.log(mode);
   const isProd = mode === 'production';
 
-  const getStyleLoaders = () => [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'];
-  
+  const getStyleLoaders = () => [
+    isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+    'css-loader',
+  ];
+
   const getPlugins = () => {
     const plugins = [
       new HtmlWebPlugin({
         template: 'public/index.html',
-      })
+      }),
     ];
 
     if (isProd) {
@@ -33,7 +35,7 @@ module.exports = (env, options) => {
         {
           test: /\.tsx?$/,
           resolve: { extensions: ['.ts', '.tsx'] },
-          loader: 'ts-loader'
+          loader: 'ts-loader',
         },
         {
           test: /\.jsx?$/,
@@ -74,11 +76,11 @@ module.exports = (env, options) => {
     performance: {
       hints: false,
       maxEntrypointSize: 512000,
-      maxAssetSize: 512000
+      maxAssetSize: 512000,
     },
     output: {
       filename: 'bundle.js',
-      path: path.resolve(__dirname, 'dist')
-    }
+      path: path.resolve(__dirname, 'dist'),
+    },
   };
 };
