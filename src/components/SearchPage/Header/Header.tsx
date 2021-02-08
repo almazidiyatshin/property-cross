@@ -1,12 +1,10 @@
 import * as React from 'react';
 
-import './Header.scss';
+import './header.scss';
 
-export function Header() {
-  return (
-    <div className="menu">
-      <h1 className="title">PropertyCross</h1>
-      <button className="btn-faves">Faves</button>
-    </div>
-  );
-}
+export const Header = () => (
+  <div className="menu">
+    <h1 className="title">PropertyCross</h1>
+    <button className="btn-faves">Faves</button>
+  </div>
+);

@@ -4,14 +4,12 @@ import { Header } from './Header/Header';
 import { Form } from './Form/Form';
 import { Output } from './Output/Output';
 
-import './SearchPage.scss';
+import './searchPage.scss';
 
-export function SearchPage() {
-  return (
-    <div className="search-page">
-      <Header />
-      <Form />
-      <Output />
-    </div>
-  );
-}
+export const SearchPage = () => (
+  <div className="search-page">
+    <Header />
+    <Form />
+    <Output />
+  </div>
+);

@@ -1,11 +1,7 @@
 import * as React from 'react';
 
-import './ErrorMessage.scss';
+import './errorMessage.scss';
 
-export function ErrorMessage() {
-  return (
-    <>
-      <p className="error-message">There was a problem with your search</p>
-    </>
-  );
-}
+export const ErrorMessage = () => (
+  <p className="error-message">There was a problem with your search</p>
+);
