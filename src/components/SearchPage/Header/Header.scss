@@ -1,0 +1,20 @@
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.btn-faves {
+  background-color: gainsboro;
+  padding: 12px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+}
