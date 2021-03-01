@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 
-import '../output.scss';
+import '../homePage.scss';
 
 export const RecentSearches = () => (
   <>

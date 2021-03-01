@@ -27,7 +27,7 @@ module.exports = (env, options) => {
   };
 
   return {
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     mode: mode,
     devtool: 'source-map',
     module: {
@@ -72,6 +72,7 @@ module.exports = (env, options) => {
     plugins: getPlugins(),
     devServer: {
       open: true,
+      historyApiFallback: true,
     },
     performance: {
       hints: false,
