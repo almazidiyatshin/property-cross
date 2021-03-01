@@ -1,5 +1,13 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .input {
-  width: 100%;
+  width: 65%;
   padding: 12px 20px;
   border-radius: 8px;
   border: 2px solid lightblue;
@@ -9,9 +17,12 @@
 
 .btn {
   padding: 12px 20px;
-  margin: 10px 10px 0 0;
   border: none;
   font-size: 1rem;
   background-color: lightblue;
   border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(133, 207, 231);
 }
